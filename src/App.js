@@ -1,21 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Personal Portfolio</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          I built this portfolio using <strong>React</strong> to showcase my projects and skills.
+        </p>
+        <p>
+          It highlights my work in data analytics, web development, and visualization.
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/summer8678"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          View My GitHub
         </a>
       </header>
     </div>
