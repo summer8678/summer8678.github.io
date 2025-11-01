@@ -27,7 +27,7 @@
   justify-content: center;
   align-items: center;
   gap: 1.2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   max-width: 600px;
   margin: 0 auto;
 }
