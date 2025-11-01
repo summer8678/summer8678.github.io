@@ -12,6 +12,13 @@
 }
 
 .navbarScrolled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   background-color: rgba(40, 40, 40, 0.8);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
@@ -89,14 +96,11 @@
     gap: 1.5rem;
     padding: 20px 40px;
     border-radius: 0 0 8px 8px;
-
-    /* 🪄 アニメーション効果用 */
     opacity: 0;
     transform: translateY(-10px);
     transition: all 0.3s ease-in-out;
   }
 
-  /* メニューが開いたとき */
   .showMenu {
     display: flex;
     opacity: 1;
