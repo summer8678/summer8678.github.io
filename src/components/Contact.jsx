@@ -35,6 +35,12 @@ function Contact() {
           📷 Instagram
         </a>
       </div>
+
+      <p style={{fontSize: "0.8rem", color: "gray", textAlign: "center", marginTop: "40px"}}>
+        <a href="https://www.flaticon.com/free-icons/decision" title="decision icons" target="_blank" rel="noopener noreferrer">
+          Decision icons created by kornkun - Flaticon
+        </a>
+      </p>
     </section>
   );
 }
