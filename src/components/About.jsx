@@ -15,7 +15,9 @@ export default function About() {
     <section id="about" className={styles.about}>
       <h2 className={styles.title}>About Me</h2>
       <p className={styles.description}>
-        Description.
+        I enjoy creating systems that make complex data easier to understand.
+        I've worked with both hardware and software, combining them to build instrumentation and control systems.
+        Outside of work, I like walking in the forests of North Vancouver, relaxing by the beach, and trying different ethnic cuisines at local restaurants.
       </p>
 
       <div className={styles.galleryWrapper}>
