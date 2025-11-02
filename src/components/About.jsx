@@ -8,8 +8,15 @@ import img3 from "../assets/IMG_1373.jpg";
 export default function About() {
   const scrollRef = useRef(null);
 
-  const scrollLeft = () => scrollRef.current.scrollBy({ left: -390, behavior: "smooth" });
-  const scrollRight = () => scrollRef.current.scrollBy({ left: 390, behavior: "smooth" });
+  const scrollLeft = () => {
+    const scrollAmount = window.innerWidth < 768 ? 250 : 390;
+      scrollRef.current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+  };
+
+  const scrollRight = () => {
+    const scrollAmount = window.innerWidth < 768 ? 250 : 390;
+      scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  };
 
   return (
     <section id="about" className={styles.about}>
