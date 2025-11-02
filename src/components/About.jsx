@@ -9,12 +9,12 @@ export default function About() {
   const scrollRef = useRef(null);
 
   const scrollLeft = () => {
-    const scrollAmount = window.innerWidth < 768 ? 250 : 390;
+    const scrollAmount = window.innerWidth < 768 ? 320 : 415;
       scrollRef.current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
   };
 
   const scrollRight = () => {
-    const scrollAmount = window.innerWidth < 768 ? 250 : 390;
+    const scrollAmount = window.innerWidth < 768 ? 320 : 415;
       scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
   };
 
