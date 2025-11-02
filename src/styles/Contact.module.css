@@ -1,21 +1,75 @@
-.contact {
-  text-align: center;
-  padding: 60px 20px;
+.contactSection {
   background-color: #f9f9f9;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
 }
 
-.contact h2 {
+.contactTitle {
   font-size: 2rem;
-  margin-bottom: 10px;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
-.contact .icons a {
-  margin: 0 10px;
-  font-size: 28px;
+.contactText {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.contactLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: nowrap;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contactLink {
+  color: #00bfa6;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid #00bfa6;
+  padding: 10px 24px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactLink:hover {
+  background-color: #00bfa6;
+  color: white;
+  transform: scale(1.05);
   text-decoration: none;
 }
 
-.contact p {
-  color: #444;
-  margin: 8px 0;
+@media (max-width: 768px) {
+  .contactLinks {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contactTitle {
+    font-size: 1.7rem;
+  }
+
+  .contactText {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .contactLink {
+    width: 70%;
+    justify-content: center;
+  }
 }

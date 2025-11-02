@@ -1,30 +1,48 @@
-// src/components/Contact.js
 import React from "react";
-import "../styles/Contact.module.css";
+import styles from "../styles/Contact.module.css";
 
-export default function Contact() {
+function Contact() {
   return (
-    <section className="contact">
-      <h2>Hello!</h2>
-      <p>I’m UX/UI Designer</p>
-      <p>You can contact with me</p>
+    <section id="contact" className={styles.contactSection}>
+      <h2 className={styles.contactTitle}>Contact</h2>
+      <p className={styles.contactText}>
+        Feel free to get in touch!
+      </p>
 
-      <div className="icons">
-        <a href="mailto:youremail@gmail.com">✉️</a>
-        <a href="https://t.me/yourusername">💬</a>
+      <div className={styles.contactLinks}>
+        <a
+          href="https://www.linkedin.com/in/summer-t-b81332337/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.contactLink}
+        >
+          💼 LinkedIn
+        </a>
+        <a
+          href="https://github.com/summer8678"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.contactLink}
+        >
+          💻 GitHub
+        </a>
+        <a
+          href="https://www.instagram.com/summer1008678/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.contactLink}
+        >
+          📷 Instagram
+        </a>
       </div>
 
-      <h3>Follow Me</h3>
-      <div className="icons">
-        <a href="https://dribbble.com" target="_blank" rel="noreferrer">
-          🏀
+      <p style={{fontSize: "0.8rem", color: "gray", textAlign: "center", marginTop: "40px"}}>
+        <a href="https://www.flaticon.com/free-icons/decision" title="decision icons" target="_blank" rel="noopener noreferrer">
+          Decision icons created by kornkun - Flaticon
         </a>
-        <a href="https://www.behance.net" target="_blank" rel="noreferrer">
-          🎨
-        </a>
-      </div>
-
-      <p>Thanks ❤️</p>
+      </p>
     </section>
   );
 }
+
+export default Contact;
