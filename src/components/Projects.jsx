@@ -1,4 +1,5 @@
 import styles from "../styles/Projects.module.css";
+import pukiwikiImg from "../assets/pukiwiki.png";
 
 export default function Projects() {
   return (
@@ -48,6 +49,33 @@ export default function Projects() {
                   allowfullscreen=""
                   title="Embedded post">
           </iframe>
+        </div>
+      </div>
+
+      {/* --- Personal Wiki for Study Notes (PukiWiki) --- */}
+      <div className={styles.projectContainer}>
+        <div className={styles.text}>
+          <h3>Personal Wiki for Study Notes</h3>
+          <p>
+            Set up a self-hosted PukiWiki site to document my learning in cloud tools,
+            statistical analysis, and machine learning.
+            Installed and customized this PHP-based wiki on a local server
+            to organize study notes in one searchable place.
+          </p>
+        </div>
+
+        <div className={styles.embed}>
+          <img
+            src={pukiwikiImg}
+            alt="Screenshot of PukiWiki personal study notes"
+            style={{
+              width: "480px",
+              height: "270px",
+              borderRadius: "8px",
+              boxShadow: "0 4px 10px rgba(0, 0, 0, 0.15)",
+              objectFit: "contain"
+            }}
+          />
         </div>
       </div>
     </section>
