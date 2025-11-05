@@ -20,8 +20,8 @@ export default function Projects() {
         <div className={styles.embed}>
           <iframe
             src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7386112641187979264?compact=1"
-            height="399"
-            width="504"
+            height="270"
+            width="480"
             frameBorder="0"
             allowFullScreen=""
             title="LinkedIn Embedded Post"
@@ -43,8 +43,8 @@ export default function Projects() {
 
         <div className={styles.embed}>
           <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7304885206421766145?compact=1"
-                  height="399"
-                  width="504"
+                  height="270"
+                  width="480"
                   frameborder="0"
                   allowfullscreen=""
                   title="Embedded post">
