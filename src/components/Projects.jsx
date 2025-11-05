@@ -73,7 +73,7 @@ export default function Projects() {
               height: "270px",
               borderRadius: "8px",
               boxShadow: "0 4px 10px rgba(0, 0, 0, 0.15)",
-              objectFit: "cover",
+              objectFit: "contain"
             }}
           />
         </div>
