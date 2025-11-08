@@ -18,12 +18,12 @@ export default function Projects() {
         </div>
 
         <div className={styles.embed}>
-          <iframe
-            src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7386112641187979264?compact=1"
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7386112641187979264?compact=1"
             height="270"
             width="480"
             frameBorder="0"
-            allowFullScreen=""
+            allow="fullscreen"
+            allowFullScreen={true}
             title="LinkedIn Embedded Post"
           ></iframe>
         </div>
@@ -45,9 +45,10 @@ export default function Projects() {
           <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7304885206421766145?compact=1"
                   height="270"
                   width="480"
-                  frameborder="0"
-                  allowfullscreen=""
-                  title="Embedded post">
+                  frameBorder="0"
+                  allow="fullscreen"
+                  allowFullScreen={true}
+                  title="LinkedIn Embedded Post 2">
           </iframe>
         </div>
       </div>
