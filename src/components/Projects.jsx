@@ -10,6 +10,7 @@ export default function Projects() {
       <div className={styles.projectContainer}>
         <div className={styles.text}>
           <h3>Web Visualization App</h3>
+          <p className={styles.date}>Sep - Oct 2025</p>
           <p>
             A React-based interactive web application for real-time data
             visualization. Integrated Supabase (SQL backend) and RESTful APIs
@@ -33,6 +34,7 @@ export default function Projects() {
       <div className={styles.projectContainer}>
         <div className={styles.text}>
           <h3>AI Chatbot for Financial Analysis</h3>
+          <p className={styles.date}>Mar 2025</p>
           <p>
             Built an AI-powered chatbot in a Boston Consulting Group simulation
             to extract insights from financial reports. 
@@ -57,6 +59,7 @@ export default function Projects() {
       <div className={styles.projectContainer}>
         <div className={styles.text}>
           <h3>Personal Wiki for Study Notes</h3>
+          <p className={styles.date}>May 2024 - Present</p>
           <p>
             Set up a self-hosted PukiWiki site to document my learning in cloud tools,
             statistical analysis, and machine learning.

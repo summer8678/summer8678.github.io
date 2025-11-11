@@ -31,6 +31,15 @@
   line-height: 1.7;
 }
 
+.date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: -8px;
+  margin-bottom: 10px;
+  font-family: "Roboto Mono", monospace;
+  font-style: italic;
+}
+
 .embed {
   flex: 1 1 45%;
   display: flex;
