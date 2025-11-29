@@ -20,10 +20,10 @@ export default function Navbar() {
       </div>
 
       <ul className={`${styles.navLinks} ${menuOpen ? styles.showMenu : ""}`}>
-        <li><a href="#home" className={styles.link} onClick={() => setMenuOpen(false)}>Home</a></li>
-        <li><a href="#projects" className={styles.link} onClick={() => setMenuOpen(false)}>Projects</a></li>
-        <li><a href="#about" className={styles.link} onClick={() => setMenuOpen(false)}>About</a></li>
-        <li><a href="#contact" className={styles.link} onClick={() => setMenuOpen(false)}>Contact</a></li>
+        <li><a href="/#home" className={styles.link} onClick={() => setMenuOpen(false)}>Home</a></li>
+        <li><a href="/#projects" className={styles.link} onClick={() => setMenuOpen(false)}>Projects</a></li>
+        <li><a href="/#about" className={styles.link} onClick={() => setMenuOpen(false)}>About</a></li>
+        <li><a href="/#contact" className={styles.link} onClick={() => setMenuOpen(false)}>Contact</a></li>
       </ul>
     </nav>
   );
