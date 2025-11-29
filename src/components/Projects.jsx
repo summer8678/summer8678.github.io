@@ -6,6 +6,24 @@ export default function Projects() {
     <section id="projects" className={styles.projects}>
       <h2 className={styles.title}>Projects</h2>
 
+      {/* --- Sentiment Analysis --- */}
+      <div className={styles.projectContainer}>
+        <div className={styles.text}>
+          <h3>Customer Review Sentiment Analysis</h3>
+          <p className={styles.date}>Nov 2025 - Ongoing</p>
+          <p>
+            A Python (TextBlob, langid) + Power BI project analyzing 500+ multilingual
+            customer feedback trends from public dataset. Built a dashboard to visualize
+            sentiment patterns such as meal-time differences and pre/post-campaign changes.
+          </p>
+          <a href="/sentiment-analysis" className={styles.linkButton}>View details →</a>
+        </div>
+
+        <div className={styles.embed}>
+          Under Construction
+        </div>
+      </div>
+
       {/* --- Web Visualization App --- */}
       <div className={styles.projectContainer}>
         <div className={styles.text}>
