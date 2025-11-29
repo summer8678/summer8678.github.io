@@ -61,6 +61,27 @@
   background-color: #fff;
 }
 
+.linkButton {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-family: "Roboto Mono", monospace;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 999px;
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+.linkButton:hover {
+  background-color: #333;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
 @media (max-width: 768px) {
   .projectContainer {
     flex-direction: column;
