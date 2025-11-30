@@ -1,7 +1,6 @@
 import styles from "../styles/Projects.module.css";
 import pukiwikiImg from "../assets/pukiwiki.png";
 import { Link } from "react-router-dom";
-import styles from "../styles/Projects.module.css";
 
 export default function Projects() {
   return (
