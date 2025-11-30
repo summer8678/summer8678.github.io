@@ -1,5 +1,7 @@
 import styles from "../styles/Projects.module.css";
 import pukiwikiImg from "../assets/pukiwiki.png";
+import { Link } from "react-router-dom";
+import styles from "../styles/Projects.module.css";
 
 export default function Projects() {
   return (
@@ -16,7 +18,7 @@ export default function Projects() {
             customer feedback trends from public dataset. Built a dashboard to visualize
             sentiment patterns such as meal-time differences and pre/post-campaign changes.
           </p>
-          <a href="/sentiment-analysis" className={styles.linkButton}>View details →</a>
+          <Link to="/sentiment-analysis" className={styles.linkButton}>View details →</Link>
         </div>
 
         <div className={styles.embed}>

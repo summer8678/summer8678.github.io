@@ -14,7 +14,7 @@ export default function App() {
       <Navbar />
 
       <Routes>
-        {/* ------ Home Page ------ */}
+        {/* Home page */}
         <Route
           path="/"
           element={
@@ -27,7 +27,7 @@ export default function App() {
           }
         />
 
-        {/* ------ Details Page ------ */}
+        {/* Details page */}
         <Route path="/sentiment-analysis" element={<SentimentAnalysis />} />
       </Routes>
     </Router>

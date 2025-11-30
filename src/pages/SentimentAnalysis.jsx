@@ -9,7 +9,7 @@ export default function SentimentAnalysis() {
         Under Construction.
       </p>
 
-      <a href="/#/projects" 
+      <a href="/#projects" 
          style={{
            display: "inline-block",
            marginTop: "40px",
