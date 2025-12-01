@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.9f9f4597.css",
+    "main.css": "/static/css/main.0a72d240.css",
     "main.js": "/static/js/main.2fd2d0bb.js",
     "static/js/453.ececc0a5.chunk.js": "/static/js/453.ececc0a5.chunk.js",
     "static/media/IMG_1373.jpg": "/static/media/IMG_1373.4cc993a68c2ea72c176a.jpg",
@@ -8,12 +8,12 @@
     "static/media/IMG_1285.jpg": "/static/media/IMG_1285.c7f3d6af18c1800e0ada.jpg",
     "static/media/pukiwiki.png": "/static/media/pukiwiki.dc01d46aec4c07db66e5.png",
     "index.html": "/index.html",
-    "main.9f9f4597.css.map": "/static/css/main.9f9f4597.css.map",
+    "main.0a72d240.css.map": "/static/css/main.0a72d240.css.map",
     "main.2fd2d0bb.js.map": "/static/js/main.2fd2d0bb.js.map",
     "453.ececc0a5.chunk.js.map": "/static/js/453.ececc0a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f9f4597.css",
+    "static/css/main.0a72d240.css",
     "static/js/main.2fd2d0bb.js"
   ]
 }
