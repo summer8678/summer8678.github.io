@@ -9,31 +9,37 @@ export default function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
 
+  const isHome = location.pathname === "/";
+
+  // --- Navbar style logic (Home vs Other pages) ---
   useEffect(() => {
+    if (!isHome) {
+      setScrolled(true);
+      return;
+    }
+
     const handleScroll = () => setScrolled(window.scrollY > 50);
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isHome]);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
+  // --- Smooth Scroll Navigation ---
   const scrollToId = (id) => {
     const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  const handleNavClick = (event, targetId) => {
-    event.preventDefault();
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
     setMenuOpen(false);
 
-    if (location.pathname !== "/") {
+    if (!isHome) {
       navigate("/");
-
-      setTimeout(() => {
-        scrollToId(targetId);
-      }, 0);
+      setTimeout(() => scrollToId(targetId), 150);
     } else {
       scrollToId(targetId);
     }
@@ -46,42 +52,10 @@ export default function Navbar() {
       </div>
 
       <ul className={`${styles.navLinks} ${menuOpen ? styles.showMenu : ""}`}>
-        <li>
-          <a
-            href="/#home"
-            className={styles.link}
-            onClick={(e) => handleNavClick(e, "home")}
-          >
-            Home
-          </a>
-        </li>
-        <li>
-          <a
-            href="/#projects"
-            className={styles.link}
-            onClick={(e) => handleNavClick(e, "projects")}
-          >
-            Projects
-          </a>
-        </li>
-        <li>
-          <a
-            href="/#about"
-            className={styles.link}
-            onClick={(e) => handleNavClick(e, "about")}
-          >
-            About
-          </a>
-        </li>
-        <li>
-          <a
-            href="/#contact"
-            className={styles.link}
-            onClick={(e) => handleNavClick(e, "contact")}
-          >
-            Contact
-          </a>
-        </li>
+        <li><a href="#home"     className={styles.link} onClick={(e)=>handleNavClick(e,"home")}>Home</a></li>
+        <li><a href="#projects" className={styles.link} onClick={(e)=>handleNavClick(e,"projects")}>Projects</a></li>
+        <li><a href="#about"    className={styles.link} onClick={(e)=>handleNavClick(e,"about")}>About</a></li>
+        <li><a href="#contact"  className={styles.link} onClick={(e)=>handleNavClick(e,"contact")}>Contact</a></li>
       </ul>
     </nav>
   );
