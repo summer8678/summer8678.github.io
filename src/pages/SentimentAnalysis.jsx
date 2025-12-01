@@ -1,4 +1,30 @@
+import { useLocation, useNavigate } from "react-router-dom";
+import styles from "../styles/Buttons.module.css";
+
 export default function SentimentAnalysis() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const isHome = location.pathname === "/";
+
+  const scrollToProjects = () => {
+    const el = document.getElementById("projects");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  const handleBackClick = (e) => {
+    e.preventDefault();
+
+    if (!isHome) {
+      navigate("/");
+      setTimeout(() => scrollToProjects(), 150);
+    } else {
+      scrollToProjects();
+    }
+  };
+
   return (
     <section style={{ padding: "60px 20px", maxWidth: "900px", margin: "0 auto" }}>
       <h1 style={{ fontSize: "2.2rem", marginBottom: "20px" }}>
@@ -9,16 +35,10 @@ export default function SentimentAnalysis() {
         Under Construction.
       </p>
 
-      <a href="/#projects" 
-         style={{
-           display: "inline-block",
-           marginTop: "40px",
-           padding: "10px 18px",
-           border: "1px solid #333",
-           borderRadius: "999px",
-           textDecoration: "none",
-           color: "#333"
-         }}>
+      <a href="#projects"
+         className={styles.linkButton}
+         onClick={handleBackClick}
+      >
         ← Back to Projects
       </a>
     </section>
