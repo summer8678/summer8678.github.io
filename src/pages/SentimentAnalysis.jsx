@@ -31,7 +31,7 @@ export default function SentimentAnalysis() {
         Customer Review Sentiment Analysis
       </h1>
 
-      <p style={{ color: "#555", lineHeight: "1.7", marginBottom: "30px" }}>
+      <p style={{ color: "#555", lineHeight: "1.7", marginBottom: "600px" }}>
         Under Construction.
       </p>
 
