@@ -2,6 +2,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import styles from "../styles/Buttons.module.css";
 import ratingDistImg from "../assets/rating_distribution.png";
+import PolratingvsratingDistImg from "../assets/polarityvsrating.png";
 import { useEffect } from "react";
 
 export default function SentimentAnalysis() {
@@ -166,17 +167,7 @@ export default function SentimentAnalysis() {
         effects.
       </p>
 
-      <p
-        style={{
-          color: "#555",
-          lineHeight: 1.7,
-          marginBottom: "26px"
-        }}
-      >
-        Under construction.
-      </p>
-
-{/*       <h3
+      <h3
         style={{
           fontSize: "1.15rem",
           marginTop: "18px",
@@ -192,105 +183,79 @@ export default function SentimentAnalysis() {
           marginBottom: "10px",
         }}
       >
-        A column chart plots the average sentiment polarity for each star
-        rating. Error bars (mean ± standard deviation) show the spread inside
-        each group. Polarity increases with star rating, which confirms that the
-        sentiment model is consistent with human ratings, but the error bars
-        remind us that even 5-star reviews include a range of opinions.
-      </p> */}
-
-{/*       <h3
-        style={{
-          fontSize: "1.15rem",
-          marginTop: "18px",
-          marginBottom: "8px",
-        }}
-      >
-        Meal type comparison (lunch vs dinner)
-      </h3>
-      <p
-        style={{
-          color: "#555",
-          lineHeight: 1.7,
-          marginBottom: "10px",
-        }}
-      >
-        Another chart compares average polarity by meal type using the
-        <code> review_questions_Meal type</code> field. Error bars show that
-        dinner reviews are slightly more positive and more stable, while lunch
-        reviews have larger variability. This suggests that the lunch-time
-        experience is less consistent than dinner.
+        The overall trend shows that sentiment becomes more positive as the star rating
+        increases, but the relationship is not perfectly linear. In particular, the
+        average polarity for 2-star and 3-star reviews is slightly reversed. This can
+        happen when 2-star comments include strong emotional wording—often expressing
+        clear dissatisfaction, while 3-star reviews tend to contain more balanced or
+        mixed opinions, which naturally pulls their polarity closer to neutral. In
+        other words, a higher star rating does not always guarantee stronger positive
+        language, especially when customers use the middle ratings to describe
+        “okay but not great” experiences.
       </p>
 
-      <h3
+      <img 
+        src={PolratingvsratingDistImg}
+        alt="Polarity vs star rating chart"
         style={{
-          fontSize: "1.15rem",
-          marginTop: "18px",
-          marginBottom: "8px",
+          width: "100%",
+          maxWidth: "250px",
+          margin: "20px auto 40px auto",
+          display: "block",
+          borderRadius: "10px",
+          boxShadow: "0 4px 12px rgba(0,0,0,0.15)"
         }}
-      >
-        Attribute ratings with variability
-      </h3>
-      <p
-        style={{
-          color: "#555",
-          lineHeight: 1.7,
-          marginBottom: "10px",
-        }}
-      >
-        I also analyze attribute-level ratings such as food, service, and
-        atmosphere. A bar chart with error bars shows that food has the highest
-        average score but also the largest variance, while service is slightly
-        lower but more stable. This combination is useful for deciding where to
-        focus quality improvements.
-      </p> */}
+      />
 
-{/*       <h3
-        style={{
-          fontSize: "1.15rem",
-          marginTop: "18px",
-          marginBottom: "8px",
-        }}
-      >
-        Time trend and promotion period
-      </h3>
       <p
         style={{
+          textIndent: "2em",
           color: "#555",
           lineHeight: 1.7,
-          marginBottom: "10px",
+          marginBottom: "56px",
         }}
       >
-        A time-series plot shows average polarity by month, with separate lines
-        for promotion and non-promotion periods. Error bars per month help show
-        how stable sentiment is over time. During the promotion period, polarity
-        increases slightly but the error bars are larger, meaning that customer
-        reactions are more mixed.
-      </p> */}
-
-      {/* <h3
-        style={{
-          fontSize: "1.15rem",
-          marginTop: "18px",
-          marginBottom: "8px",
-        }}
-      >
-        Text length vs polarity
-      </h3>
-      <p
-        style={{
-          color: "#555",
-          lineHeight: 1.7,
-          marginBottom: "24px",
-        }}
-      >
-        Finally, a scatter plot of review text length versus polarity shows that
-        very short reviews are often extremely positive or negative, while
-        longer reviews tend to have polarity values closer to the middle. This
-        explains why some neutral-looking scores still come from detailed and
-        informative feedback.
+        Low-rating reviews also show wide variation in sentiment expression. People
+        describe negative experiences in many different ways, from short and sharply
+        worded comments to longer, more neutral descriptions. At the high end of the
+        scale, 4-star and 5-star reviews often contain similarly enthusiastic language,
+        so their polarity values converge and become less separable. This reflects a natural form of
+        saturation in highly positive feedback.
       </p>
- */}
+
+      {/* <h2
+        style={{
+          fontSize: "1.15rem",
+          marginTop: "18px",
+          marginBottom: "8px",
+        }}
+      >
+        Multilingual Review Dataset
+      </h2>
+
+      <p
+        style={{
+          color: "#555",
+          lineHeight: 1.7,
+          marginBottom: "10px",
+        }}
+      >
+        The full dataset contains customer reviews written in 14 different languages,
+        making it a highly diverse and realistic sample for sentiment analysis.
+        The majority of comments are written in English (≈ 90%),
+        but a wide range of minor languages also appears: Korean, Spanish, German, Italian, Japanese, Chinese, Portuguese, Basque, Danish, Swedish, French, Slovenian, and Luxembourgish.
+      </p> */}
+
+      <p
+        style={{
+          color: "#555",
+          lineHeight: 1.7,
+          marginBottom: "26px"
+        }}
+      >
+        Under construction.
+      </p>
+
       <div style={{ height: "40px" }} />
 
       {/* ====== Back Button ====== */}
