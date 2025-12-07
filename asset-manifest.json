@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.0a72d240.css",
-    "main.js": "/static/js/main.67a643b9.js",
+    "main.js": "/static/js/main.347151c8.js",
     "static/js/453.ececc0a5.chunk.js": "/static/js/453.ececc0a5.chunk.js",
     "static/media/IMG_1373.jpg": "/static/media/IMG_1373.4cc993a68c2ea72c176a.jpg",
     "static/media/tmp20250606.png": "/static/media/tmp20250606.b50892ad9f9bbafcff21.png",
     "static/media/IMG_1285.jpg": "/static/media/IMG_1285.c7f3d6af18c1800e0ada.jpg",
     "static/media/pukiwiki.png": "/static/media/pukiwiki.dc01d46aec4c07db66e5.png",
+    "static/media/dashboard.png": "/static/media/dashboard.cf5e25e942de77e2042e.png",
     "static/media/avgratingofserviceatmospherefoodvsmonth.png": "/static/media/avgratingofserviceatmospherefoodvsmonth.9a47bc6b648ba14c848c.png",
     "static/media/rating_distribution.png": "/static/media/rating_distribution.750225f24d3b141f15e2.png",
     "static/media/polarityvsrating.png": "/static/media/polarityvsrating.bf7e036140144565e981.png",
     "index.html": "/index.html",
     "main.0a72d240.css.map": "/static/css/main.0a72d240.css.map",
-    "main.67a643b9.js.map": "/static/js/main.67a643b9.js.map",
+    "main.347151c8.js.map": "/static/js/main.347151c8.js.map",
     "453.ececc0a5.chunk.js.map": "/static/js/453.ececc0a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a72d240.css",
-    "static/js/main.67a643b9.js"
+    "static/js/main.347151c8.js"
   ]
 }
