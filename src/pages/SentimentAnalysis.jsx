@@ -2,7 +2,8 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import styles from "../styles/Buttons.module.css";
 import ratingDistImg from "../assets/rating_distribution.png";
-import PolratingvsratingDistImg from "../assets/polarityvsrating.png";
+import polratingvsratingDistImg from "../assets/polarityvsrating.png";
+import avgratingvsmonthImg from "../assets/avgratingofserviceatmospherefoodvsmonth.png";
 import { useEffect } from "react";
 
 export default function SentimentAnalysis() {
@@ -195,7 +196,7 @@ export default function SentimentAnalysis() {
       </p>
 
       <img 
-        src={PolratingvsratingDistImg}
+        src={polratingvsratingDistImg}
         alt="Polarity vs star rating chart"
         style={{
           width: "100%",
@@ -223,14 +224,14 @@ export default function SentimentAnalysis() {
         saturation in highly positive feedback.
       </p>
 
-      {/* <h2
+      <h2
         style={{
           fontSize: "1.15rem",
           marginTop: "18px",
           marginBottom: "8px",
         }}
       >
-        Multilingual Review Dataset
+        Month-to-Month Trends in Customer Experience
       </h2>
 
       <p
@@ -240,23 +241,65 @@ export default function SentimentAnalysis() {
           marginBottom: "10px",
         }}
       >
-        The full dataset contains customer reviews written in 14 different languages,
-        making it a highly diverse and realistic sample for sentiment analysis.
-        The majority of comments are written in English (≈ 90%),
-        but a wide range of minor languages also appears: Korean, Spanish, German, Italian, Japanese, Chinese, Portuguese, Basque, Danish, Swedish, French, Slovenian, and Luxembourgish.
-      </p> */}
+        The monthly trend graph shows two noticeable declines, in June and October 2025.
+        To understand these changes, the customer comments posted during those periods
+        were examined.
+      </p>
+
+      <img 
+        src={avgratingvsmonthImg}
+        alt="Avg rating of service, food, and atmosphere vs Year-Month chart"
+        style={{
+          width: "100%",
+          maxWidth: "450px",
+          margin: "20px auto 40px auto",
+          display: "block",
+          borderRadius: "10px",
+          boxShadow: "0 4px 12px rgba(0,0,0,0.15)"
+        }}
+      />
 
       <p
         style={{
+          textIndent: "2em",
           color: "#555",
           lineHeight: 1.7,
-          marginBottom: "26px"
+          marginBottom: "12px",
         }}
       >
-        Under construction.
+        In June, both Food and Service scores decreased. Comments from that month
+        frequently mention portion size, value for money, and inconsistencies in
+        quality. Several reviews also describe negative interactions with staff, which
+        likely contributed to the lower Service ratings observed.
       </p>
 
-      <div style={{ height: "40px" }} />
+      <p
+        style={{
+          textIndent: "2em",
+          color: "#555",
+          lineHeight: 1.7,
+          marginBottom: "12px",
+        }}
+      >
+        The decline in October appears to be driven mainly by Service. During this
+        period, a customer reported receiving a takeout order without cutlery.
+        Although cutlery can be added for an extra charge, the customer may not have
+        been informed of this option, leading to frustration when they were unable to
+        eat their meal. Such operational oversights can strongly influence the overall
+        perception of service quality.
+      </p>
+
+      <p
+        style={{
+          textIndent: "2em",
+          color: "#555",
+          lineHeight: 1.7,
+          marginBottom: "56px",
+        }}
+      >
+        Overall, the month-to-month variations highlight how operational details and
+        customer communication can influence the perception of service quality.
+      </p>
 
       {/* ====== Back Button ====== */}
       <a
