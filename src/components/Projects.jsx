@@ -1,5 +1,6 @@
 import styles from "../styles/Projects.module.css";
 import pukiwikiImg from "../assets/pukiwiki.png";
+import dashboardImg from "../assets/dashboard.png";
 import { Link } from "react-router-dom";
 
 export default function Projects() {
@@ -21,7 +22,17 @@ export default function Projects() {
         </div>
 
         <div className={styles.embed}>
-          Under Construction
+          <img
+            src={dashboardImg}
+            alt="Dashboard of sentiment analysis project"
+            style={{
+              width: "480px",
+              height: "270px",
+              borderRadius: "8px",
+              boxShadow: "0 4px 10px rgba(0, 0, 0, 0.15)",
+              objectFit: "contain"
+            }}
+          />
         </div>
       </div>
 
