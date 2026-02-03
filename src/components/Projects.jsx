@@ -8,11 +8,37 @@ export default function Projects() {
     <section id="projects" className={styles.projects}>
       <h2 className={styles.title}>Projects</h2>
 
+      {/* --- Breast Histopathology Classification --- */}
+      <div className={styles.projectContainer}>
+        <div className={styles.text}>
+          <h3>Breast Histopathology Image Classification</h3>
+          <p className={styles.date}>Feb. 2026 - Ongoing</p>
+          <p>
+            Trying to classify breast histopathology image patches using machine learning to identify cancer-related patterns.
+          </p>
+          <Link to="/breast-histopathology" className={styles.linkButton}>View details →</Link>
+        </div>
+
+        <div className={styles.embed}>
+          {/* <img
+            src={histologyImg}
+            alt="Breast histopathology logistic regression project"
+            style={{
+              width: "480px",
+              height: "270px",
+              borderRadius: "8px",
+              boxShadow: "0 4px 10px rgba(0, 0, 0, 0.15)",
+              objectFit: "contain"
+            }}
+          /> */}
+        </div>
+      </div>
+
       {/* --- Sentiment Analysis --- */}
       <div className={styles.projectContainer}>
         <div className={styles.text}>
           <h3>Customer Review Sentiment Analysis</h3>
-          <p className={styles.date}>Nov 2025 - Ongoing</p>
+          <p className={styles.date}>Nov. 2025 - Ongoing</p>
           <p>
             A Python (TextBlob, langid) + Power BI project analyzing 500+ multilingual
             customer feedback trends from public dataset. Built a dashboard to visualize
@@ -40,7 +66,7 @@ export default function Projects() {
       <div className={styles.projectContainer}>
         <div className={styles.text}>
           <h3>Web Visualization App</h3>
-          <p className={styles.date}>Sep - Oct 2025</p>
+          <p className={styles.date}>Sep. - Oct. 2025</p>
           <p>
             A React-based interactive web application for real-time data
             visualization. Integrated Supabase (SQL backend) and RESTful APIs
@@ -64,7 +90,7 @@ export default function Projects() {
       <div className={styles.projectContainer}>
         <div className={styles.text}>
           <h3>AI Chatbot for Financial Analysis</h3>
-          <p className={styles.date}>Mar 2025</p>
+          <p className={styles.date}>Mar. 2025</p>
           <p>
             Built an AI-powered chatbot in a Boston Consulting Group simulation
             to extract insights from financial reports. 
