@@ -130,14 +130,14 @@ export default function BreastHistopathology() {
   );
 
   const TwoColumnRow = ({ left, right }) => (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "1.2fr 0.8fr",
-        gap: "18px",
-        alignItems: "start",
-      }}
-    >
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+          gap: "18px",
+          alignItems: "start",
+        }}
+      >
       <div>{left}</div>
       <div>{right}</div>
     </div>
@@ -242,11 +242,15 @@ export default function BreastHistopathology() {
                   fontSize: "0.85rem",
                   color: "#777",
                   marginBottom: "8px",
+                  display: "flex",
+                  justifyContent: "center"
                 }}
               >
                 Example 50×50 patches
               </div>
-              <PatchGrid items={idcImages} />
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <PatchGrid items={idcImages} />
+              </div>
             </div>
           }
         />
@@ -278,11 +282,15 @@ export default function BreastHistopathology() {
                   fontSize: "0.85rem",
                   color: "#777",
                   marginBottom: "8px",
+                  display: "flex",
+                  justifyContent: "center"
                 }}
               >
                 Example 50×50 patches
               </div>
-              <PatchGrid items={nonImages} />
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <PatchGrid items={nonImages} />
+              </div>
             </div>
           }
         />
