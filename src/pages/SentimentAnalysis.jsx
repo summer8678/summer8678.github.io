@@ -62,7 +62,7 @@ export default function SentimentAnalysis() {
           fontStyle: "italic",
         }}
       >
-        Nov 2025 – Ongoing
+        Nov. 2025 – Ongoing
       </p>
 
       <p
