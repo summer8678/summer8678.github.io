@@ -11,6 +11,8 @@ import non3 from "../assets/10253_idx5_x301_y1651_class0.png";
 import idc1 from "../assets/10253_idx5_x501_y351_class1.png";
 import idc2 from "../assets/10253_idx5_x501_y401_class1.png";
 import idc3 from "../assets/10253_idx5_x551_y301_class1.png";
+import pipelineImg from "../assets/pipeline.png";
+
 
 export default function BreastHistopathology() {
   const location = useLocation();
@@ -176,9 +178,10 @@ export default function BreastHistopathology() {
 
       {/* ====== Project Intro ====== */}
       <p style={{ color: "#555", lineHeight: 1.7, marginBottom: "26px" }}>
-        This project studies breast tissue microscope images. The goal is to
-        understand visual patterns that may indicate the presence of cancer
-        cells before applying machine learning methods.
+        This project analyzes breast tissue microscope image patches to identify visual patterns
+        that may indicate the presence of cancer cells.
+        The goal is to understand these patterns and apply machine learning methods
+        to classify cancer and non-cancer tissue regions.
       </p>
 
       {/* ===== Dataset Overview ===== */}
@@ -297,7 +300,7 @@ export default function BreastHistopathology() {
       </Card>
 
       {/* ===== Reference Link ===== */}
-      <a
+      <p style={{ color: "#555", lineHeight: 1.7, marginBottom: "12px" }}><a
         href="https://cancer.ca/en/cancer-information/cancer-types/breast/grading"
         target="_blank"
         rel="noopener noreferrer"
@@ -305,11 +308,85 @@ export default function BreastHistopathology() {
       >
         Grading breast cancer (Canadian Cancer Society)
       </a>
+      </p>
 
-      {/* ===== Under construction ===== */}
-      <h2 style={{ fontSize: "1.15rem", marginBottom: "8px" }}>
-        Under construction
+      {/* ===== Data Preparation ===== */}
+      <h2 style={{ fontSize: "1.15rem", margin: "0 0 8px 0" }}>
+        Data Preparation
       </h2>
+
+      <p style={{ color: "#555", lineHeight: 1.7, marginBottom: "12px" }}>
+        To prevent data leakage, the dataset was split at the patient level,
+        ensuring that image patches from the same patient did not appear in both training and test sets.
+       </p>
+
+      <p style={{ color: "#555", lineHeight: 1.7, marginBottom: "0px" }}>
+        Each 50×50 RGB patch is flattened into a 7,500-dimensional feature vector.
+        After normalization and PCA dimensionality reduction, logistic regression
+        is used as a baseline classifier to predict whether the patch contains IDC.
+      </p>
+
+      <h2 style={{ fontSize: "1.15rem", marginBottom: "8px" }}>
+        Baseline Modeling Pipeline
+      </h2>
+
+      <p style={{ color: "#555", lineHeight: 1.7, marginBottom: "16px" }}>
+        The baseline model uses a simple machine learning pipeline that converts
+        each image patch into numerical features and applies dimensionality reduction
+        before logistic regression classification.
+      </p>
+
+      <div
+        style={{
+          margin: "20px 0 26px 0",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <img
+          src={pipelineImg}
+          alt="Pipeline showing flattening, scaling, PCA and logistic regression prediction"
+          style={{
+            maxWidth: "100%",
+            width: "820px",
+            borderRadius: "14px",
+            background: "#fff",
+          }}
+        />
+      </div>
+
+      <h2 style={{ fontSize: "1.15rem", marginBottom: "8px" }}>
+        Baseline Classification Using Logistic Regression
+      </h2>
+
+      <p style={{ color: "#555", lineHeight: 1.7, marginBottom: "12px" }}>
+        A logistic regression classifier was trained as a baseline model to distinguish
+        IDC-positive and non-IDC patches.
+      </p>
+
+      <p style={{ color: "#555", lineHeight: 1.7, marginBottom: "6px" }}>
+        <b>Model evaluation results:</b>
+      </p>
+
+      <ul style={{ color: "#555", lineHeight: 1.8, marginBottom: "16px", paddingLeft: "20px" }}>
+        <li>Accuracy: <b>83.5%</b></li>
+        <li>Recall (IDC detection): <b>90.8%</b></li>
+        <li>Precision (IDC): <b>67.9%</b></li>
+        <li>F1-score (IDC): <b>0.78</b></li>
+        <li>ROC AUC: <b>0.94</b></li>
+      </ul>
+
+      <p style={{ color: "#555", lineHeight: 1.7, marginBottom: "12px" }}>
+        The ROC analysis shows strong separability between cancer and non-cancer patches.
+        High recall indicates that most cancer-positive patches were successfully detected,
+        although some normal patches were incorrectly classified as cancer.
+      </p>
+
+      <p style={{ color: "#555", lineHeight: 1.7, marginBottom: "16px" }}>
+        This baseline experiment demonstrates that even a simple linear model using raw
+        pixel features can capture meaningful visual patterns related to cancer cell structures.
+      </p>
 
       {/* ===== Back Button ===== */}
       <a
