@@ -1,11 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.0a72d240.css",
-    "main.js": "/static/js/main.f29e22ec.js",
+    "main.js": "/static/js/main.57eb1cb5.js",
     "static/js/453.ececc0a5.chunk.js": "/static/js/453.ececc0a5.chunk.js",
+    "static/media/histology.png": "/static/media/histology.390673c3272260724048.png",
     "static/media/IMG_1373.jpg": "/static/media/IMG_1373.4cc993a68c2ea72c176a.jpg",
     "static/media/tmp20250606.png": "/static/media/tmp20250606.b50892ad9f9bbafcff21.png",
     "static/media/IMG_1285.jpg": "/static/media/IMG_1285.c7f3d6af18c1800e0ada.jpg",
+    "static/media/pipeline.png": "/static/media/pipeline.2ae8d8210f9b7e50b3c0.png",
     "static/media/pukiwiki.png": "/static/media/pukiwiki.dc01d46aec4c07db66e5.png",
     "static/media/dashboard.png": "/static/media/dashboard.cf5e25e942de77e2042e.png",
     "static/media/avgratingofserviceatmospherefoodvsmonth.png": "/static/media/avgratingofserviceatmospherefoodvsmonth.9a47bc6b648ba14c848c.png",
@@ -13,11 +15,11 @@
     "static/media/polarityvsrating.png": "/static/media/polarityvsrating.b10c9571eaadd398f6f0.png",
     "index.html": "/index.html",
     "main.0a72d240.css.map": "/static/css/main.0a72d240.css.map",
-    "main.f29e22ec.js.map": "/static/js/main.f29e22ec.js.map",
+    "main.57eb1cb5.js.map": "/static/js/main.57eb1cb5.js.map",
     "453.ececc0a5.chunk.js.map": "/static/js/453.ececc0a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a72d240.css",
-    "static/js/main.f29e22ec.js"
+    "static/js/main.57eb1cb5.js"
   ]
 }
